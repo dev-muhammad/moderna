@@ -1,2 +1,2 @@
 # moderna
-Modern, mobile-freindly web framework for building simple web pages
+Moderna - mobile-freindly web framework for building simple web pages
