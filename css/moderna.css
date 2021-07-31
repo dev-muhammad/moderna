@@ -338,7 +338,7 @@ a {
     width:50px;
 }
 .testimonials .item .testimonials-content{
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px;
     background-color: #ddd;
     padding:10px;
     margin-bottom: 10px;
