@@ -43,6 +43,11 @@ a {
 .text-item{
     text-align: left !important;
 }
+.text-center-item{
+    max-width: 500px;
+    text-align: center;
+    margin:auto;
+}
 .header{
     position: fixed;
     height: 50px;
@@ -96,8 +101,8 @@ a {
     font-size: 20px;
     font-weight: bold;
 }
-.menu-item:hover{
-    color: #1ec677;
+.menu-item>a:hover{
+    color: #131313;
     cursor: pointer;
 }
 .menu-action{
@@ -313,8 +318,8 @@ a {
 .accordion li {
     /*   animation: bounceInUp 1s ease both; */
 }
-/* testimonials */
-.testimonials{
+/* testimonial */
+.testimonial{
     max-width: 600px;
     display:flex; 
     flex-direction: column;
@@ -322,32 +327,32 @@ a {
     align-content: center;
     margin: 0 auto;
 }
-.testimonials .item{
+.testimonial .item{
     margin:10px 0;
 }
-.testimonials>div{
+.testimonial>div{
     display:flex;
     flex-direction: row;
 }
-.testimonials .image{
+.testimonial .image{
     align-self: end;
     margin-right:5px;
 }
-.testimonials img{
+.testimonial img{
     border-radius: 25px;
     width:50px;
 }
-.testimonials .item .testimonials-content{
+.testimonial .item .testimonial-content{
     border-radius: 15px;
     background-color: #ddd;
     padding:10px;
     margin-bottom: 10px;
 }
-.testimonials .item .testimonials-content .testimonials-title{
+.testimonial .item .testimonial-content .testimonial-title{
     font-weight: 600;
     color: #222;
 }
-.testimonials .item .testimonials-content .testimonials-text{
+.testimonial .item .testimonial-content .testimonial-text{
     margin: 5px 0px;
     color: #313131;
 }
@@ -359,7 +364,7 @@ a {
     text-align: center;
 }
 .full-height{
-    height: 80vh;
+    min-height: 80vh;
 }
 .pa-0{
     padding: 0px;

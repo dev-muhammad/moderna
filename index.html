@@ -17,13 +17,13 @@
             </div>
             <nav class="header-nav">
                 <ul id="menu" class="menu pa-0">
-                    <li class="menu-item">Item 1</li>
-                    <li class="menu-item">Item 2</li>
-                    <li class="menu-item">Item 3</li>
-                    <li class="menu-item">Item 4</li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#components">Components</a></li>
+                    <li class="menu-item"><a href="#author">Author</a></li>
+                    <li class="menu-item"><a href="#start">How to start?</a></li>
                 </ul>
                 <div class="menu-action">
-                    <a class="button" href="#">Click Me</a>
+                    <a class="button" href="https://github.com/dev-muhammad/moderna" target="_blank">Github Page</a>
                 </div>
                 <span id="showMenuBtn" class="mobile-menu-icon closed"></span>                
             </nav>
@@ -31,18 +31,20 @@
     </header>
 
     <main class="mt-5">
+        <!-- First screen -->
         <article class="container pa-5 full-height">
             <div class="item text-item pl-5">
-                <h2 class="title mb-1">Pay anyone the fast, fee-free way</h2>
-                <p class="subtitle">Pay friends and family, Chime members or not. They claim funds to their bank account, instantly6 and fee-free. No extra apps needed.</p>
+                <h2 class="title mb-1">Moderna</h2>
+                <p class="subtitle">Yet another CSS framework to build web pages faster with minimalistic design</p>
                 <br>
-                <a href="#" class="button mt-5">More info</a>
+                <a href="#about" class="button mt-5">More info</a>
             </div>
             <div class="item image-item">
                 <img class="image" style="height: 400px;" src="img/container-image.png" alt="">
             </div>
         </article>
-        <article class="container pa-7 ma-0 reverse-mobile" style="background-color: #1ec677;">
+        <!-- About section -->
+        <article id="about" class="container pa-7 ma-0 reverse-mobile" style="background-color: #1ec677;">
             <div class="item image-item">
                 <img class="image" style="height: 400px;" src="img/container-image.png" alt="">
             </div>
@@ -51,8 +53,10 @@
                 <p class="subtitle">Pay friends and family, Chime members or not. They claim funds to their bank account, instantly6 and fee-free. No extra apps  <a href="#" style="color:#fff">needed</a>.</p>
             </div>
         </article>
-        <article class="pa-5">
-            <div class="content-center text-center">
+        <!-- Components section -->
+        <!-- Horizontal cards -->
+        <article id="components" class="pa-5">
+            <div id="cards" class="content-center text-center">
                 <h2 class="title">Horizontal and Vertical Cards</h2>
             </div>
             <div class="card-containter">
@@ -121,8 +125,8 @@
             </div>
             
         </article>
-
-        <article class="container" style="display: block;">
+        <!-- Accordion -->
+        <article id="accordion" class="container" style="display: block;">
             <div class="text-center">
                 <h2 class="title">FAQ</h2>
                 <p class="subtitle">Pay friends and family, Chime members or not.</p>
@@ -156,34 +160,35 @@
                 </ul>
             </div>
         </article>
-
-        <article class="container pa-7 pt-2 ma-0" style="display: block;background-color: #1ec677;">
+        <!-- Testimonial -->
+        <article id="testimonial" class="container pa-7 pt-2 ma-0" style="display: block;background-color: #1ec677;">
             <div class="text-center">
-                <h2 class="title" style="color:#fff">Testimonials</h2>
+                <h2 class="title" style="color:#fff">Testimonial</h2>
             </div>
-            <div class="testimonials">
+            <div class="testimonial">
                 <div class="item">
                   <div class="image">
-                    <img src="img/testimonials-1.jpeg" alt="">
+                    <img src="img/testimonial-1.jpeg" alt="">
                   </div>
-                  <div class="testimonials-content">
-                    <span class="testimonials-title">Alisa Surprizer (mentor)</span>
-                    <p class="testimonials-text">Help increase your credit score by an average of 30 points with our new secured credit card5. No interest, no annual fees, no credit check to apply. Eligibility requirements apply.</p>
+                  <div class="testimonial-content">
+                    <span class="testimonial-title">Alisa Surprizer (mentor)</span>
+                    <p class="testimonial-text">Help increase your credit score by an average of 30 points with our new secured credit card5. No interest, no annual fees, no credit check to apply. Eligibility requirements apply.</p>
                   </div>
                 </div>
                 
                 <div class="item">
                   <div class="image">
-                    <img src="img/testimonials-2.jpeg" alt="">
+                    <img src="img/testimonial-2.jpeg" alt="">
                   </div>
-                  <div class="testimonials-content">
-                    <span class="testimonials-title">Stive Jobs</span>
-                    <p class="testimonials-text">Help increase your credit score by an average of 30 points with our new secured credit card5. No interest, no annual fees, no credit check to apply. Eligibility requirements apply.</p>
+                  <div class="testimonial-content">
+                    <span class="testimonial-title">Stive Jobs</span>
+                    <p class="testimonial-text">Help increase your credit score by an average of 30 points with our new secured credit card5. No interest, no annual fees, no credit check to apply. Eligibility requirements apply.</p>
                   </div>
                 </div>
               </div>
         </article>
-        <article class="container pa-5">
+        <!-- Aythor section -->
+        <article id="author" class="container pa-5">
             <div class="item text-item pl-5">
                 <h2 class="title mb-1">Pay anyone the fast, fee-free way</h2>
                 <p class="subtitle">Pay friends and family, Chime members or not. They claim funds to their bank account, instantly6 and fee-free. No extra apps needed.</p>
@@ -192,27 +197,36 @@
                 <img class="image" style="height: 400px;" src="img/container-image.png" alt="">
             </div>
         </article>
+
+        <!-- How to start section -->
+        <article id="start" class="container pa-5">
+            <div class="text-center-item">
+                <h2 class="title mb-1">How to start?</h2>
+                <p class="subtitle">Just download CSS and JS file from official gthub repository or clone it.</p>
+                <a href="#download" class="button mt-5">Github Page</a>
+             </div>
+        </article>
     </main>
 
     <footer class="footer">
         <div class="footer-item" style="width: 300px;text-align:left;">
-            <p class="subtitle">Pay friends and family, Chime members or not. They claim funds to their bank account.</p>
+            <p class="subtitle">Moderna - yet another CSS framework to build web pages faster with minimalistic design</p>
         </div>
         <div class="footer-item">
-            <p class="list-title">Title</p>
+            <p class="list-title">Sections</p>
             <ul>
-                <li class="list-item"><a href="#">item 1</a></li>
-                <li class="list-item"><a href="#">item 2</a></li>
-                <li class="list-item"><a href="#">item 3</a></li>
+                <li class="list-item"><a href="#about">About</a></li>
+                <li class="list-item"><a href="#author">Author</a></li>
+                <li class="list-item"><a href="#start">How to start?</a></li>
             </ul>
         </div>
 
         <div class="footer-item">
-            <p class="list-title">Title</p>
+            <p class="list-title">Components</p>
             <ul>
-                <li class="list-item"><a href="#">item 1</a></li>
-                <li class="list-item"><a href="#">item 2</a></li>
-                <li class="list-item"><a href="#">item 3</a></li>
+                <li class="list-item"><a href="#cards">Cards</a></li>
+                <li class="list-item"><a href="#accordion">Accordion</a></li>
+                <li class="list-item"><a href="#testimonial">Testimonial</a></li>
             </ul>
         </div>
         
