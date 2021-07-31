@@ -342,6 +342,7 @@ a>.menu-item:hover{
 .testimonial img{
     border-radius: 25px;
     width:50px;
+    height: 50px;
 }
 .testimonial .item .testimonial-content{
     border-radius: 15px;
@@ -573,7 +574,7 @@ a>.menu-item:hover{
     }
     .mobile-menu-icon::after{
         content:url("data:image/svg+xml,<svg width='40' height='40' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /></svg>");
-        padding:5px 10px;
+        padding:0px;
         margin: 10px;
         cursor: pointer;
     }
