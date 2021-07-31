@@ -7,6 +7,12 @@ document.onscroll = function() {
     }
 }
 document.getElementById("showMenuBtn").onclick = function(){
+    toogleMenu();
+}
+document.getElementById("menu").onclick = function(){
+    toogleMenu();
+}
+function toogleMenu(){
     menu = document.getElementById("menu");
     menuButton = document.getElementById("showMenuBtn");
     if (menu.classList.contains("show-menu")){
