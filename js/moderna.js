@@ -5,5 +5,17 @@ document.onscroll = function() {
     }else{
         header.classList.remove("active-header")
     }
-    
+}
+document.getElementById("showMenuBtn").onclick = function(){
+    menu = document.getElementById("menu");
+    menuButton = document.getElementById("showMenuBtn");
+    if (menu.classList.contains("show-menu")){
+        menu.classList.remove("show-menu");
+        menuButton.classList.add("closed")
+        menu.classList.add("menu");
+    }else{
+        menu.classList.add("show-menu");
+        menu.classList.remove("menu");
+        menuButton.classList.remove("closed")
+    }
 }
