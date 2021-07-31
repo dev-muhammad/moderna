@@ -29,7 +29,7 @@ a {
 }
 .container {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -110,6 +110,8 @@ a {
     justify-content: center;;
     background-color: #ddd;
     padding:30px 0px;
+    align-content: center;
+    align-items: center;
 }
 .footer-item{
     width: 250px;
@@ -154,9 +156,11 @@ a {
     border: #ddd solid 1px;
     border-radius: 10px;
     margin: 20px;
+}
+.elevation{
     transition: .5s all,box-shadow .6s ease;
 }
-.card:hover{
+.elevation:hover{
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.4);
     background-color: rgba(255,255,255);
     border: none;
@@ -525,5 +529,39 @@ a {
 @media (max-width: 800px) {
     .container, .footer {
       flex-direction: column;
+    }
+    .header-nav .menu {
+        display: none;
+    }
+    .header-content{
+        padding:0px;
+    }
+    .header-nav{
+        justify-content: end;
+        padding-right: 10px;
+    }
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container .text-item{
+        padding-left: 0px;
+    }
+    .full-height{
+        height: max-content;
+    }
+    .reverse-mobile{
+        flex-direction: column-reverse;
+    }
+    .card-containter{
+        flex-direction: column;
+    }
+    .horizontal-card{
+        flex-direction: column;
+    }
+    .horizontal-card .card-content .card-action{
+        text-align: center;
     }
 }
