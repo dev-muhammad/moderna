@@ -546,7 +546,7 @@ a>.menu-item:hover{
     }
     .header-nav{
         justify-content: end;
-        padding-right: 10px;
+        padding-right: 0px;
     }
     .container{
         margin-left: 0px;
