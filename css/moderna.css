@@ -43,6 +43,9 @@ a {
 .text-item{
     text-align: left !important;
 }
+.image-item>img{
+    width:400px; 
+}
 .text-center-item{
     max-width: 500px;
     text-align: center;
@@ -339,7 +342,7 @@ a>.menu-item:hover{
     flex-direction: row;
 }
 .testimonial .image{
-    align-self: end;
+    align-self: flex-end;
     margin-right:5px;
 }
 .testimonial img{
@@ -545,8 +548,8 @@ a>.menu-item:hover{
         padding:0px;
     }
     .header-nav{
-        justify-content: end;
-        padding-right: 0px;
+        justify-content: flex-end;
+        padding-right: 20px;
     }
     .container{
         margin-left: 0px;
@@ -556,6 +559,9 @@ a>.menu-item:hover{
     }
     .container .text-item{
         padding-left: 0px;
+    }
+    .image-item>img{
+        width:300px; 
     }
     .full-height{
         height: max-content;
