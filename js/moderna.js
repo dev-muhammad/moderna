@@ -1,3 +1,6 @@
+// Project: Moderna framework
+// Author: Muhammad
+// Official repo: github.com/dev-muhammad/moderna
 document.onscroll = function() {
     header = document.getElementById("header") 
     if (window.scrollY > 0){
