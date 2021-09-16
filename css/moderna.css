@@ -5,7 +5,7 @@ Official repo: github.com/dev-muhammad/moderna
 */
 *{
     font-family: "Roboto", sans-serif;
-    color: #313131;
+    color: #343434;
 }
 body{
     padding:0;
@@ -167,7 +167,7 @@ a>.menu-item:hover{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    border: #ddd solid 1px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 10%);
     border-radius: 10px;
     margin: 20px;
 }
