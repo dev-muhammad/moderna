@@ -1,6 +1,8 @@
 // Project: Moderna framework
 // Author: Muhammad
 // Official repo: github.com/dev-muhammad/moderna
+
+//fix menu in top on scroll
 document.onscroll = function() {
     header = document.getElementById("header") 
     if (window.scrollY > 0){
@@ -15,6 +17,8 @@ document.getElementById("showMenuBtn").onclick = function(){
 document.getElementById("menu").onclick = function(){
     toogleMenu();
 }
+
+//toggle menu in mobile
 function toogleMenu(){
     menu = document.getElementById("menu");
     menuButton = document.getElementById("showMenuBtn");
@@ -28,3 +32,15 @@ function toogleMenu(){
         menuButton.classList.remove("closed")
     }
 }
+
+// smooth scroll effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});

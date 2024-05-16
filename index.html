@@ -4,36 +4,28 @@ Author: Muhammad
 Official repo: github.com/dev-muhammad/moderna
  -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="img/icon.png" sizes="any" type="image/png">
-        <title>Moderna - framework to build landing pages with pure HTML and CSS, a bit JS</title>
-        <link rel="stylesheet" href="css/moderna.css">
-    </head>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/icon.png" sizes="any" type="image/png">
+    <title>Moderna - framework to build landing pages with pure HTML and CSS, a bit JS</title>
+    <link rel="stylesheet" href="css/moderna.css">
+</head>
+<body>
     <header class="header" id="header">
         <div class="header-content">
             <div class="header-branding mr-3">
-                <a href="#">
+                <a href="#top">
                     <img class="logo" src="img/logo.svg" alt="LOGO">
                 </a>
             </div>
             <nav class="header-nav">
                 <ul id="menu" class="menu pa-0">
-                    <a href="#about">
-                        <li class="menu-item">About</li>
-                    </a>
-                    <a href="#components">
-                        <li class="menu-item">Components</li>
-                    </a>
-                    <a href="#author">
-                        <li class="menu-item">Author</li>
-                    </a>
-                    <a href="#start">
-                        <li class="menu-item">How to start?</li>
-                    </a>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#components">Components</a></li>
+                    <li class="menu-item"><a href="#author">Author</a></li>
+                    <li class="menu-item"><a href="#start">How to start?</a></li>
                 </ul>
                 <div class="menu-action">
                     <a class="button" href="#start" >Start</a>
@@ -43,9 +35,9 @@ Official repo: github.com/dev-muhammad/moderna
         </div>
     </header>
 
-    <main class="mt-5">
+    <main class="mt-5" id="top">
         <!-- First screen -->
-        <article class="container pa-5 full-height">
+        <section class="container pa-5 full-height">
             <div class="item text-item pl-5">
                 <h2 class="title mb-1">Moderna</h2>
                 <p class="subtitle">Yet another framework to build landing pages faster with minimalistic design. With pure HTML and CSS, a bit JS without any third party libraries</p>
@@ -55,17 +47,19 @@ Official repo: github.com/dev-muhammad/moderna
             <div class="item image-item">
                 <img class="image"  src="img/desktop-mockup.png" alt="">
             </div>
-        </article>
+        </section>
+
         <!-- About section -->
-        <article id="about" class="container pa-7 ma-0 reverse-mobile" style="background-color: #1ec677;">
+        <article id="about" class="container pa-7 ma-0 reverse-mobile full-background-color">
             <div class="item image-item">
                 <img class="image"  src="img/mobile-mockup.png" alt="">
             </div>
             <div class="item text-item pl-5">
                 <h2 class="title mb-1">About Moderna framework</h2>
-                <p class="subtitle">There are many web frameworks on the net, but every new idea has a chance to come true. This framework is built to create landing pages using pure HTML, CSS, JS without any third party libraries. The framework is published under the <a href="https://github.com/dev-muhammad/moderna/blob/main/LICENSE" target="_blank" style="color:#fff">MIT license</a> and it's free to use.</p>
+                <p class="subtitle">There are many web frameworks on the net, but every new idea has a chance to come true. This framework is built to create landing pages using pure HTML, CSS, JS without any third party libraries. The framework is published under the <a class="white-text" href="https://github.com/dev-muhammad/moderna/blob/main/LICENSE" target="_blank">MIT license</a> and it's free to use.</p>
             </div>
         </article>
+
         <!-- Components section -->
         <!-- Cards -->
         <article id="components" class="pa-5">
@@ -85,7 +79,7 @@ Official repo: github.com/dev-muhammad/moderna
                         <div class="card-title">Horizontal card</div>
                         <p class="card-text">This is horizontal card with image and action button. The block is responsive and will be vertical on mobile view and horizontal on large screens. Also has shadow effect on mouse hover.</p>
                         <p class="card-action">
-                            <a href="#">Action button</a>
+                            <a class="link" href="#">Action button</a>
                         </p>
                     </div>
                 </div>
@@ -97,7 +91,7 @@ Official repo: github.com/dev-muhammad/moderna
                         <div class="card-title">Horizontal card</div>
                         <p class="card-text">This is horizontal card with image and action button. The block is responsive and will be vertical on mobile view and horizontal on large screens. Also has shadow effect on mouse hover.</p>
                         <p class="card-action">
-                            <a href="#">Action button</a>
+                            <a class="link" href="#">Action button</a>
                         </p>
                     </div>
                 </div>
@@ -120,7 +114,7 @@ Official repo: github.com/dev-muhammad/moderna
                         <div class="card-title">Vertical card</div>
                         <p class="card-text">This is vertical card with image and action button. The block always vertical. Has shadow effect like horizontal card, but title is aligned in center.</p>
                         <p class="text-center card-action">
-                            <a href="#">More info</a>
+                            <a class="link" href="#">More info</a>
                         </p>
                     </div>
                 </div>
@@ -135,35 +129,37 @@ Official repo: github.com/dev-muhammad/moderna
                 </div>
             </div>
         </article>
+
         <!-- Testimonial -->
-        <article id="testimonial" class="container pa-7 pt-2 ma-0" style="display: block;background-color: #1ec677;">
+        <article id="testimonial" class="container pa-7 pt-2 ma-0 full-background-color flex-column">
             <div class="text-center">
-                <h2 class="title" style="color:#fff">Testimonial</h2>
+                <h2 class="title white-text">Testimonial</h2>
             </div>
             <div class="testimonial">
                 <div class="item">
-                  <div class="image">
+                <div class="image">
                     <img class="circle-rounded-image" src="img/author-avatar.jpg" alt="">
-                  </div>
-                  <div class="testimonial-content">
+                </div>
+                <div class="testimonial-content">
                     <span class="testimonial-title">Muhammad (author)</span>
                     <p class="testimonial-text">Use this component to share your customer's opinion on the product. It grabs attention and builds confidence. Please use real photos and names, and only honest reviews.</p>
-                  </div>
+                </div>
                 </div>
                 
                 <div class="item">
-                  <div class="image">
+                <div class="image">
                     <img class="circle-rounded-image" src="img/icon.png" alt="">
-                  </div>
-                  <div class="testimonial-content">
+                </div>
+                <div class="testimonial-content">
                     <span class="testimonial-title">Moderna framework</span>
                     <p class="testimonial-text">I'm another framework to build landing pages with pure HTML and CSS, a bit JS without any third party libraries.</p>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
         </article>
+
         <!-- Accordion -->
-        <article id="accordion" class="container" style="display: block;">
+        <article id="accordion" class="container flex-column">
             <div class="text-center">
                 <h2 class="title">Accordion</h2>
                 <p class="subtitle">Use this component to answer frequently asked questions from your users</p>
@@ -211,6 +207,7 @@ Official repo: github.com/dev-muhammad/moderna
                 </ul>
             </div>
         </article>
+
         <!-- Author section -->
         <article id="author" class="container pa-5">
             <div class="item text-item pl-5">
@@ -220,7 +217,7 @@ Official repo: github.com/dev-muhammad/moderna
                 I have many ideas for digital products and always need to create landing pages on protyping process to validate idea and check demand. I used many tools to build landing pages, but they have so many unnecassary parts and unused code. Because of it page will be heavy and loads long time.</p>
                 <p class="subtitle"> 
                 So I decided to build my own lightweight framework with only necessary components.</p>
-             </div>
+            </div>
             <div class="item image-item">
                 <img class="image circle-rounded-image" src="img/author-avatar.jpg" alt="">
             </div>
@@ -232,49 +229,35 @@ Official repo: github.com/dev-muhammad/moderna
                 <h2 class="title mb-1">How to start?</h2>
                 <p class="subtitle">Just download CSS and JS file from official github repository or clone it. If you like it, don't forget mark with star the repository:)</p>
                 <a href="https://github.com/dev-muhammad/moderna" target="_blank" class="button mt-5">Github Page</a>
-             </div>
+            </div>
         </article>
     </main>
 
     <footer class="footer">
-        <div class="footer-item" style="width: 300px;text-align:left;">
+        <div class="footer-item">
             <p class="subtitle">Moderna - yet another framework to build landing pages faster with minimalistic design. With pure HTML and CSS, a bit JS without any third party libraries. </p>
         </div>
         <div class="footer-item">
             <p class="list-title">Sections</p>
             <ul>
-                <a href="#about">
-                    <li class="list-item">About</li>
-                </a>
-                <a href="#components">
-                    <li class="list-item">Components</li>
-                </a>
-                <a href="#author">
-                    <li class="list-item">Author</li>
-                </a>
-                <a href="#start">
-                    <li class="list-item">How to start?</li>
-                </a>
+                <li class="list-item"><a class="link-hover" href="#about">About</a></li>
+                    <li class="list-item"><a class="link-hover" href="#components">Components</a></li>
+                    <li class="list-item"><a class="link-hover" href="#author">Author</a></li>
+                    <li class="list-item"><a class="link-hover" href="#start">How to start?</a></li>
             </ul>
         </div>
 
         <div class="footer-item">
             <p class="list-title">Components</p>
             <ul>
-                <a href="#cards">
-                    <li class="list-item">Cards</li>
-                </a>
-                <a href="#testimonial">
-                    <li class="list-item">Testimonial</li>
-                </a>
-                <a href="#accordion">
-                    <li class="list-item">Accordion</li>
-                </a>
+                <li class="list-item"><a class="link-hover" href="#cards">Cards</a></li>
+                <li class="list-item"><a class="link-hover" href="#testimonial">Testimonial</a></li>
+                <li class="list-item"><a class="link-hover" href="#accordion">Accordion</a></li>
             </ul>
         </div>
         
     </footer>
     <p class="sign">Made by Moderna</p>
-    <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/moderna.js"></script>
+</body>
 </html>

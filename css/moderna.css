@@ -3,18 +3,43 @@ Project: Moderna framework
 Author: Muhammad
 Official repo: github.com/dev-muhammad/moderna
 */
+
+/* CSS Variables */
+:root {
+    --primary-color: #1ec677;
+    --secondary-color: #343434;
+    --background-color: #fff;
+    --transperent-background-color: rgba(255,255,255,0.9);
+    --text-color: #000;
+    --footer-background: #ddd;
+    --box-shadow-color: rgba(0, 0, 0, 0.4);
+    --testimonial-text: #313131;
+    --testimonial-title: #222;
+}
 *{
     font-family: "Roboto", sans-serif;
-    color: #313131;
+    color: var(--secondary-color);
+}
+html {
+    scroll-behavior: smooth;
 }
 body{
     padding:0;
     margin:0;
 }
 a {
-    background-color: transparent;
-    color: #1ec677;
     text-decoration: none;
+}
+.link {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.link-hover:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.white-text{
+    color: #fff
 }
 .title {
     font-size: 46px;
@@ -26,10 +51,10 @@ a {
 }
 .button{
     padding: 10px 20px;
-    background-color: #1ec677;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 20px;
-    color: #fff;
+    color: var(--background-color);
     font-size: 18px;
 }
 .container {
@@ -63,15 +88,15 @@ a {
     right: 0;
     top: 0;
     z-index: 10;
-    background-color: #fff;
+    background-color: var(--background-color);
     padding: 5px 0 8px;
     padding-top: 5px;
     padding-bottom: 8px;
-    transition: .3s all,box-shadow .6s ease;
+    transition: .3s all, box-shadow .6s ease;
 }
 .active-header{
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  background-color: rgba(255,255,255,0.9)
+  box-shadow: 0 0 10px var(--box-shadow-color);
+  background-color: var(--transperent-background-color);
 }
 .header-content{
     max-width: 1100px;
@@ -110,7 +135,7 @@ a {
     font-weight: bold;
 }
 a>.menu-item:hover{
-    color: #1ec677;
+    color: var(--primary-color);
     cursor: pointer;
 }
 .menu-action{
@@ -119,15 +144,15 @@ a>.menu-item:hover{
 .footer{
     display: flex;
     justify-content: center;;
-    background-color: #ddd;
+    background-color: var(--footer-background);
     padding:30px 0px;
     align-content: center;
     align-items: center;
 }
 .footer-item{
-    width: 250px;
     margin: 20px;
-    text-align: center;
+    width: 250px;
+    text-align: left;
 }
 .footer-item > ul{
     list-style-type: none;
@@ -144,14 +169,20 @@ a>.menu-item:hover{
     font-size: 20px;
 }
 .footer-item .list-item:hover{
-    color: #1ec677;
+    color: var(--primary-color);
 }
 .sign{
     text-align: center;
-    background-color: #000;
-    color:#fff;
+    background-color: var(--text-color);
+    color:var(--background-color);
     padding: 5px;
     margin: 0px;
+}
+.full-background-color {
+    background-color: var(--primary-color);
+}
+.flex-column {
+    flex-direction: column !important;
 }
 
 /* card */
@@ -167,7 +198,7 @@ a>.menu-item:hover{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    border: #ddd solid 1px;
+    box-shadow: 0 0 3px var(--box-shadow-color);
     border-radius: 10px;
     margin: 20px;
 }
@@ -175,8 +206,8 @@ a>.menu-item:hover{
     transition: .5s all,box-shadow .6s ease;
 }
 .elevation:hover{
-    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.4);
-    background-color: rgba(255,255,255);
+    box-shadow: 10px 10px 20px 0px var(--box-shadow-color);
+    background-color: var(--background-color);
     border: none;
 }
 .horizontal-card{
@@ -215,18 +246,18 @@ a>.menu-item:hover{
 }
 .card:hover .card-action{
     text-decoration: underline;
-    text-decoration-color: #1ec677;
+    text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
 }
+
 /* accordion */
 .accordion {
     min-height: 0;
     display: inline-block;
     position: relative;
-    left: 50%;
+    left: 27%;
     margin: 0px auto;
     transform: translate(-50%, 0);
-    /* background-color: #fefffa; */
     max-width: 800px;
     padding: 30px;
 }
@@ -236,12 +267,10 @@ a>.menu-item:hover{
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
-    /* background-color: #fefffa; */
     margin: 0;
     cursor: pointer;
 }
 .accordion p {
-    /* color: rgba(48, 69, 92, 0.8); */
     font-size: 17px;
     line-height: 26px;
     letter-spacing: 1px;
@@ -282,7 +311,7 @@ a>.menu-item:hover{
 .accordion ul li i:after {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: var(--text-color);
     width: 3px;
     height: 16px;
 }
@@ -356,22 +385,23 @@ a>.menu-item:hover{
 }
 .circle-rounded-image{
     border-radius: 100%;
-    border: 2px solid #fff;    
+    border: 2px solid var(--background-color);
 }
 .testimonial .item .testimonial-content{
     border-radius: 15px;
-    background-color: #ddd;
+    background-color: var(--footer-background);
     padding:10px;
     margin-bottom: 10px;
 }
 .testimonial .item .testimonial-content .testimonial-title{
     font-weight: 600;
-    color: #222;
+    color: var(--testimonial-title);
 }
 .testimonial .item .testimonial-content .testimonial-text{
     margin: 5px 0px;
-    color: #313131;
+    color: var(--testimonial-text);
 }
+
 /* pagination */
 .content-center{
     margin:0 auto;
@@ -603,12 +633,12 @@ a>.menu-item:hover{
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        background-color: rgba(255,255,255,0.9);
+        background-color: var(--transperent-background-color);
         left:0px;
         top:47px;
         width: 100vw;
         text-align: center;
-        box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
+        box-shadow: 0px 3px 3px var(--box-shadow-color);
     }
     
 }
